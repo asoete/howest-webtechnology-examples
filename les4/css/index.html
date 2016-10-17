@@ -1,0 +1,91 @@
+<!--
+// name: darkred, lemongreen
+// rgb( 255, 0, 0);
+// #ff0000
+-->
+
+<!--
+<div style="color: #ff0000;">
+	Hello World, let's do css...
+</div>
+
+<div style="color:#00ff00">
+	Second
+</div>
+
+<div style="color:#0000ff">
+	Second
+</div>
+-->
+
+<head>
+<link rel="stylesheet" href="style.css">
+
+<style type="text/css">
+	
+	/* comment in css */
+	body {
+	
+		background: yellow;
+	}
+
+	div {
+		color: red;
+		background: lightgreen;
+	}
+	
+	.orange {
+	
+		color: orange;
+	}
+	
+	p.orange {
+	
+		outline: solid green 1px;
+	}
+	
+	#some-id {
+	
+		color: blue;
+	}
+	
+	div p {
+		border: solid darkred 3px;
+	}
+	
+	div div p {
+	
+		background: pink;
+	}
+	
+	div > p {
+	
+		color: gray;
+	}
+</style>
+
+</head>
+
+<div class="orange" id="some-id">
+	First
+	<div>
+		<p>
+			Color me pink;
+		</p>
+	</div>
+</div>
+
+<p class="orange">
+	Second
+</p>
+
+<div>
+	Third
+	
+	<blockquote>
+		<p>
+			Some P in a div
+		</p>
+	</blockquote>
+</div>
+
