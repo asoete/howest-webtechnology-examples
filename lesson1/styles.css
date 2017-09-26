@@ -1,0 +1,19 @@
+div {
+
+	border: solid blue 1px;
+}
+
+#id-a {
+
+	background: yellow;
+}
+
+.class-z {
+
+	background: orange;
+}
+
+p.class-z {
+
+	/* color: red; */
+}

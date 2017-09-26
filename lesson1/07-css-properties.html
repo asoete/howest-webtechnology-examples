@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>CSS properties</title>
+</head>
+<body>
+
+	<!-- different color notations -->
+   <style type="text/css">
+   	.colors {
+   		background: red;
+   		background: rgb(0, 255, 0);
+   		background: rgb(111, 24, 89);
+   		background: #000000;
+   		background: #0f0;
+   	}
+   </style>
+   
+   <div class="colors">
+   	Color notations
+   </div>
+   
+   <!-- border -->
+   
+   <style type="text/css">
+   	.border {
+   		border-style: solid;
+   		border-style: dashed;
+   		border-style: dotted;
+   		border-style: double;
+   		border-style: groove;
+   		border-style: solid;
+   		border-width: 1px;
+   		border-color: #f5a;
+   		border: dashed green 10px;
+   		border-color: purple;
+   	}
+   </style>
+   
+   <div class="border">
+   	Border
+   </div>
+   
+   
+   
+   <!-- Margin -->
+   <style type="text/css">
+   	.margin {
+   		margin-top: 10px;
+   		margin-right: 20px;
+   		margin-bottom: 30px;
+   		margin-left: 40px;
+   		margin: 10px 20px 30px 40px;
+   		margin: 25px 50px;
+   		margin: 75px;
+   		border: solid grey 1px;
+   	}
+   </style>
+   Some text before
+   <div class="margin">
+   	Push them away
+   </div>
+   Some text after
+   
+   
+   <!-- Padding -->
+   <style type="text/css">
+   	.padding {
+   		padding-top: 10px;
+   		margin-right: 20px;
+   		padding-bottom: 30px;
+   		padding-left: 40px;
+   		padding: 10px 20px 30px 40px;
+   		padding: 25px 50px;
+   		padding: 75px;
+   		border: solid grey 1px;
+   	}
+   </style>
+   Some text before
+   <div class="padding">
+   	Push them away
+   </div>
+   Some text after
+   
+   
+   <!-- width & height -->
+   <style type="text/css">
+   	.width-and-height {
+   	
+   		border: solid grey 1px;
+   		width: 150px;
+   		height: 75px;
+   	}
+   </style>
+   <div class="width-and-height">
+   	Set my width and height
+   </div>
+   
+   
+   <!-- overflow -->
+   <style type="text/css">
+   	.overflow {
+   	
+   		border: solid grey 1px;
+   		width: 150px;
+   		height: 75px;
+   		overflow: hidden;
+   		overflow: scroll;
+   		overflow: auto;
+   	}
+   </style>
+   <div class="overflow">
+   	Set my width and height and set my overflow
+   	Set my width and height and set my overflow
+   	Set my width and height and set my overflow
+   </div>
+   
+   
+   <!-- Box model -->
+   <style type="text/css">
+   	.boxmodel, .normalmodel {
+   		padding: 25px;
+   		border: solid red 5px;
+   		width: 100px;
+   	}
+   	.boxmodel {
+   	
+   		box-sizing: border-box;
+   	}
+   </style>
+   <div class="boxmodel">
+   	define my boxmodel
+   </div>
+   <div class="normalmodel">
+   	reference boxmodel
+   </div
+   
+   
+   <!-- Outline -->
+   <style type="text/css">
+   	.outline {
+   		border: solid red 5px; /* grey gray */
+   		outline: solid green 5px;
+   	}
+   </style>
+   <div class="outline">
+   	A border around the border
+   </div>
+   
+      
+   <!-- Fonts -->
+   <style type="text/css">
+   	.font {
+   		font-size: 50px;
+   		font-size: 1.5em; /* 1.5 times larger */
+   		color: cyan;
+   		font-weight: bold;
+   		/*font-style: italic; */
+   		font-family: sans-serif;
+   		font-family: monospace;
+   		
+   		text-align: justify;
+   		text-decoration: underline overline;
+   		word-spacing: 10px;
+   		letter-spacing: 3px;
+   	}
+   </style>
+   <div class="font">
+   	Set the font of an element
+   	Set the font of an element
+   	Set the font of an element
+   	Set the font of an element
+   	Set the font of an element
+   	Set the font of an element
+   	Set the font of an element
+   </div>
+   
+   
+   <!-- -->
+   <style type="text/css">
+   	.link a:link { color: green;}
+   	.link a:visited { color: red;}
+   	.link a:hover { text-decoration: overline underline;}
+   	.link a:active { font-weight: bold;}
+   </style>
+   <div class="link">
+   	<a href="https://google.com">google.com</a>
+   	<br>
+   	<a href="https://never-been-here.com">Never been here</a>
+   </div>
+   
+   
+   <!-- -->
+   <style type="text/css">
+   .list ul li {
+   	list-style-type: square;
+   	/* list-style-type: url('img.gif');*/
+   }
+   .list ol li {
+   	list-style-type: upper-roman;
+   }
+   </style>
+   <div class="list">
+   	<ul>
+   		<li>item1</li>
+   		<li>item2</li>
+   	</ul>
+   	<ol>
+   		<li>item1</li>
+   		<li>item2</li>
+   	</ol>
+   </div>
+   
+    <!-- Tables -->
+   <style type="text/css">
+   	.table table {
+   		border-collapse: collapse;
+   		border-style: hidden;
+   	}
+   	.table td {
+   		border: solid grey 1px;
+   		border-left: none;
+   		border-right: none;
+   		padding: 5px;
+   	}
+   	/* :first-child | :last-child */
+   </style>
+   <div class="table">
+   	<table>
+   		<tr>
+   			<td>cell 1a</td>
+   			<td>cell 2a</td>
+   		</tr>
+   		<tr>
+   			<td>cell 1b</td>
+   			<td>cell 2b</td>
+   		</tr>
+   		<tr>
+   			<td>cell 1c</td>
+   			<td>cell 2c</td>
+   		</tr>
+   		<tr>
+   			<td>cell 1d</td>
+   			<td>cell 2d</td>
+   		</tr>
+   	</table>
+   </div>
+   
+   
+   <!-- hide elements -->
+   <style type="text/css">
+   	.hidden {
+   		/*display: none;*/
+   		visibility: hidden;
+   	}
+   </style>
+   before hide
+   <div class="hidden">
+   	Hide me
+   </div>
+   after hide
+   
+   
+   
+    <!-- -->
+   <style type="text/css">
+    
+   </style>
+   <div class="">
+   	
+   </div>
+</body>
+</html>

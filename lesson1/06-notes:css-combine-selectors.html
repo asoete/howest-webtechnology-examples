@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css intro</title>
+	<style type="text/css" media="screen">
+		h1, h3, h5 {
+			color: red;
+		}
+		p a {
+			background: yellow;
+		}
+		div a {
+		
+			background: pink; /* comment */
+		}
+		.abc {
+			border: solid blue 1px;
+		}
+		a.abc#id2 {
+			border: solid red 1px;
+		}
+		.parent > .child{
+		
+			background: blue;
+			color: white;
+		}
+		
+		.a ~ .b {
+		
+			background: purple;
+		}
+		ol li:nth-child( 3n ) { /* 2n = even; 2n + 1 = odd*/
+		
+			background: lightgreen;
+		}
+		li:hover {
+		
+			font-weight: bold;
+		}
+	</style>
+	
+</head>
+<body>
+
+	
+<ol>
+	<li>List element 1</li>
+	<li>List element 2</li>
+	<li>List element 3</li>
+	<li>List element 4</li>
+	<li>List element 5</li>
+	<li>List element 6</li>
+	<li>List element 7</li>
+	<li>List element 8</li>
+	<li>List element 9</li>
+	<li>List element 10</li>
+</ol>
+
+
+	<!-- siblings -->
+	
+	<div class="parent">
+		<div class="b" > child bis</div>
+		<div class="a" > child bis</div>
+		<div class="b" > child bis</div>
+		<div class="b" > child bis</div>
+		<div >
+			<div class="b" >grand child bis</div>
+		</div>	
+	</div>
+
+	<!-- direct children -->
+	
+	<div class="parent">
+		<div class="child" >first child</div>
+		<div>
+			<div class="child" >grand child</div>
+		</div>
+	</div>
+	
+
+	<!-- children -->
+	
+	<div>
+		<p class="abc">
+			<a href="https://google.com">google</a><!-- => div p a -->
+		</p>
+		<a href="https://yahoo.com">yahoo</a>
+	</div>
+	<a class="abc" id="id2" href="https://bing.com">bing</a>
+	
+	<!-- Combine selectors -->
+	<h1>H1</h1>
+	<h2>H2</h2>
+	<h3>H3</h3>
+	<h4>H4</h4>
+	<h5>H5</h5>
+	<h6>H6</h6>
+	<h1>H1</h1>
+	<h2>H2</h2>
+	<h3>H3</h3>
+	<h4>H4</h4>
+	<h5>H5</h5>
+	<h6>H6</h6> 
+	
+	
+	
+	
+</body>
+</html>

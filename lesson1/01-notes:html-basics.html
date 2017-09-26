@@ -1,0 +1,270 @@
+<doctype html>
+<html>
+<head>
+	<title>Hello World</title>
+	<style type="text/css" media="screen">
+		/*body {background: red;}*/
+	</style>
+</head>
+<body>
+
+	<!-- This is a comment... -->
+	Hello World
+	
+	<!-- attributes example -->
+	<a  href="https://howest.be">howest.be</a>
+
+   <!-- headers -->
+	<h1>Top Header</h1>
+	<h2>Level 2 Header</h2>
+	<h3>Level 3 Header</h3> 
+	<h4>Level 4 Header</h4> 
+	<h5>Level 5 Header</h5> 
+	<h6>Level 6 Header</h6>
+	
+	<!-- plain text -->
+	This is a parapgraph
+	This is a second paragraph
+	<!-- paragraph -->
+	<p>This is a parapgraph</p>
+	<p>This is a second paragraph</p>
+	
+	<!-- generic container -->
+	<div>This is a div</div>
+	<div>This is a second div</div>
+	
+	<!-- preformatted text -->
+	<pre>
+	This is preformatted
+---text
+	</pre>
+	
+	<!-- block qoute -->
+	<blockquote>
+	Some quote from your favorite person
+	</blockquote>
+	
+	<!-- block qoute -->
+	<blockquote>
+	<q>Some quote from your favorite person</q>
+	</blockquote>
+	
+	<p>
+	Before quote
+	<q>Some quote from your favorite person</q>
+	After quote
+	</p>
+	
+	<!-- create links to: -->
+	<a href="https://google.com">google.com</a>
+	<a href="https://leho.be">leho.be</a>
+	<a href="https://github.com">github.com</a>
+	
+	<!-- add a newline (break) -->
+	<br>
+	This is the first line.
+	<br>
+	This is the second line
+	
+	<br>
+	<a href="https://google.com">google.com</a>
+	<br>
+	<a href="https://leho.be">leho.be</a>
+	<br>
+	<a href="https://github.com">github.com</a>
+	
+	<p>
+		Lorem ipsum dolor sit <em>amet, consetetur sadipscing elitr,</em> sed <i>diam nonumy</i> eirmod <small>tempor</small> invidunt ut <strong>labore</strong> et <b>dolore</b> magna <strike>aliquyam</strike> erat, <span>sed diam</span> voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+	</p>
+	
+	<em>italic</em><br>
+	<small>small text</small><br>
+	<strong>bold/strong text</strong><br>
+	<strike>strike text</strike><br>
+	<span>span text</span><br>
+	
+	<!-- Print the following text so the sentences are broken up as below. -->
+	<p>
+	HTML is a markup language browser understand to format documents.<br>
+	CSS is a way to style this markup.<br>
+	PHP is a programming language.<br>
+	It is used to dynamically generate HTML-markup.
+	</p>
+
+	<!-- Print the following text so hello world is emphasised. -->
+	<p>Let's emphasise <em>hello world</em> in this sentence.</p>
+
+	<!-- Print the following text so hello world is smaller -->
+	<p>Let's make <small>hello world</small> smaller in this sentence.</p>
+
+	<!-- Print the following text so hello world is bold -->
+	<p>Let's make <strong>hello world</strong> bold in this sentence.</p>
+
+	<!-- Print the following text so hello world is crossed of. -->
+	<p>Let's strike <strike>hello world</strike> in this sentence.</p>
+
+	<!-- lists -->
+	<!-- unordered list -->
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+	</ul>	
+	
+	<!-- ordered list -->
+	<ol>
+		<li>Item 1</li>
+		<li>Item 2</li>
+	</ol>	
+	
+	<!-- create a list of links -->
+	<ol>
+		<li>
+			<a href="https://google.com">google.com</a>
+		</li>
+		<li>
+			<a href="https://leho.be">leho.be</a>
+		</li>
+		<li>
+			<a href="https://github.com">github.com</a>
+		</li>
+	</ol>
+	
+	<!-- Make an unordered list with your name, age and gender as items -->
+	<ul>
+		<li>Arne</li>
+		<li>29</li>
+		<li>male</li>
+	</ul>
+   <!-- Make your name bold, age emphasised and gender quoted. -->
+   <ul>
+		<li><strong>Arne</strong></li>
+		<li><em>29</em></li>
+		<li><q>male</q></li>
+	</ul>
+   <!-- Make a top 3 ranked list of your favorite dishes -->
+
+	<ol>
+		<li>fries</li>
+		<li>fries</li>
+		<li>fries</li>
+	</ol>
+   <!-- Add a fourth dish, but with smaller font . -->
+	<ol>
+		<li>fries</li>
+		<li>fries</li>
+		<li>fries</li>
+		<li><small>little fries</small></li>
+	</ol>
+	
+	<!--tables -->
+	<table>
+		<tr>
+			<th>Header 1</th>
+			<th>Header 2</th>
+		</tr>
+		<tr>
+			<td>cell 1</td>
+			<td>cell 2</td>
+		</tr>
+		<tr>
+			<td>cell a with longer content</td>
+			<td>cell 2</td>
+		</tr>
+	</table>
+	
+	
+    <!--
+    Make a table with two columns: name and score
+    Add 3 rows
+        Jan -> 12
+        Piet -> 15
+        Boris -> 7
+    -->
+    	<table>
+		<tr>
+			<th>Name</th>
+			<th>Score</th>
+		</tr>
+		<tr>
+			<td>Jan</td>
+			<td>12</td>
+		</tr>
+		<tr>
+			<td>Piet</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<td>Boris</td>
+			<td>7</td>
+		</tr>
+	</table>
+
+    <!-- Make the names also headers -->
+    	<table>
+		<tr>
+			<th>Name</th>
+			<th>Score</th>
+		</tr>
+		<tr>
+			<th>Jan</th>
+			<td>12</td>
+		</tr>
+		<tr>
+			<th>Piet</th>
+			<td>15</td>
+		</tr>
+		<tr>
+			<th>Boris</th>
+			<td>7</td>
+		</tr>
+	</table>
+
+
+    <!-- Add a column 'passes' and add a V if the number
+    	 is larger than 10 and an X otherwise. -->
+
+		<table>
+			<caption>Scores</caption>
+		<tr>
+			<th>Name</th>
+			<th>Score</th>
+			<th>Passes</th>
+		</tr>
+		<tr>
+			<th>Jan</th>
+			<td>12</td>
+			<td>V</td>
+		</tr>
+		<tr>
+			<th>Piet</th>
+			<td>15</td>
+			<td>V</td>
+		</tr>
+		<tr>
+			<th>Boris</th>
+			<td>7</td>
+			<td>X</td>
+		</tr>
+	</table>
+
+	<!-- attributes -->
+	<div id="id1">
+		Scroll to me
+	</div>
+	
+	<div class="class-one">
+		I have some class: class-one		
+	</div>
+	
+	<div title="I have a title">
+		I have a title		
+	</div>
+	
+	<a href="mailto:me@mail.com">mail me</a>
+	
+	
+	
+	
+	
+</body>
+</html>
