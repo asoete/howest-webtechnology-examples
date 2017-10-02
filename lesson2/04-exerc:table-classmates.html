@@ -1,0 +1,93 @@
+<!--
+Make a table with three columns: first name, last name, age where:
+
+    first column text is red
+    second column text is blue
+    third column text is green
+    content is spaced a bit from the borders
+    table caption is underline and overlined
+    Extra: add total sum column
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table with classmates</title>
+    <style type="text/css" media="screen">
+    	table th, table td{
+    		border: solid grey 1px;
+    		padding: 10px;
+    	}
+    	caption {
+    	
+    		text-decoration: underline overline;
+    		font-variant: small-caps;
+    	}
+    	.via-classes .col1 {color:darkred;}
+    	.via-classes .col2 {color:darkblue;}
+    	.via-classes .col2 {color:darkgreen;}
+    	
+    	.via-positions td:nth-child(1) {
+    		color: red;
+    	}
+    	.via-positions td:first-child {
+    		background: yellow;
+    	}
+    	.via-positions td:nth-child(2) {
+    		color: blue;
+    	}
+    	.via-positions td:nth-child(3) {
+    		color: green;
+    	}
+    	.via-positions td:last-child {
+    		background: purple;
+    	}
+    </style>
+    
+</head>
+<body>
+
+	<table class="via-positions">
+    	<caption>My Classmates</caption>
+    	<tr>
+    		<th>First Name</th>
+    		<th>Last Name</th>
+    		<th>Age</th>
+    	</tr>
+    	<tr>
+    		<td>John</td>
+    		<td>Doe</td>
+    		<td>21</td>
+    	</tr>
+    	<tr>
+    		<td>Jaine</td>
+    		<td>Doe</td>
+    		<td>24</td>
+    	</tr>
+    </table>
+
+    <table class="via-classes">
+    	<caption>My Classmates</caption>
+    	<tr>
+    		<th>First Name</th>
+    		<th>Last Name</th>
+    		<th>Age</th>
+    	</tr>
+    	<tr>
+    		<td class="col1">John</td>
+    		<td class="col2">Doe</td>
+    		<td class="col3">21</td>
+    	</tr>
+    	<tr>
+    		<td class="col1">Jaine</td>
+    		<td class="col2">Doe</td>
+    		<td class="col3">24</td>
+    	</tr>
+    	<tr>
+    		<th colspan="2">Total</th>
+    		<th class="col3">24</th>
+    	</tr>
+    </table>
+
+</body>
+</html>

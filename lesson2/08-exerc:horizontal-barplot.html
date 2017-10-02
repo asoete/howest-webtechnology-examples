@@ -1,0 +1,77 @@
+<!--
+Create a horizontal bar-plot with four bars:
+
+    Bar 1: 75%
+    Bar 2: 25%
+    Bar 3: 50%
+    Bar 4: 100%
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Horizontal Barplot</title>
+	<style type="text/css" media="screen">
+		.plot {
+		
+			border-left: solid black 1px;
+			border-bottom: solid black 1px;
+			padding: 10px;
+			margin-left: 50px;
+			display: inline-block;
+			position: relative;
+		}
+		.bar {
+			position: relative;
+			height: 30px;
+			width: 250px;
+			border: solid grey 1px;
+			margin: 10px;
+			margin-left: -10px; /* - .plot:padding*/
+		}
+		.fill {
+			background: lightblue;
+			position: absolute;
+			left: 0;
+			height: 100%;
+			border: solid blue 1px;
+			box-sizing: border-box;
+		}
+		.label-y {
+		
+			position: absolute;
+			left: -25px;
+			top: 50%;
+		}
+		.label-x {
+		
+			position: absolute;
+			left: 50%;
+			bottom: -25px;
+		}
+	</style>
+	
+</head>
+<body>
+	
+	<div class="plot">
+		
+		<div class="label-y">Y</div>
+		<div class="label-x">X</div>
+		
+		<div class="bar">
+			<div class="fill" style="width:75%">75%</div>
+		</div>
+		<div class="bar">
+			<div class="fill" style="width:22%">25%</div>
+		</div>
+		<div class="bar">
+			<div class="fill" style="width:50%">50%</div>
+		</div>
+		<div class="bar">
+			<div class="fill" style="width:100%">100%</div>
+		</div>
+	</div>
+	
+</body>
+</html>
+

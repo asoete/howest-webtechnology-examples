@@ -1,0 +1,73 @@
+<!--
+Create a vertical bar-plot with four bars:
+
+    Bar 1: 75%
+    Bar 2: 25%
+    Bar 3: 50%
+    Bar 4: 100%
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vertical barplot</title>
+	<style type="text/css" media="screen">
+		.plot {
+		
+			border-left: solid black 1px;
+			border-bottom: solid black 1px;
+			margin: 50px;
+			position: relative;
+		}
+		.bar {
+			border: solid gray 1px;
+			height: 200px;
+			width: 75px;
+			text-align: center;
+			position: relative;
+			display: inline-block;
+			margin: 0 10px;
+		}
+		.fill {
+		
+			background: lightblue;
+			width:100%;
+			position: absolute;
+			bottom: 0;
+		}
+		.label-y {
+		
+			position: absolute;
+			left: -25px;
+			top: 50%;
+		}
+		.label-x {
+		
+			position: absolute;
+			bottom: -25px;
+			left: 50%;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="plot">
+		
+		<div class="label-x">X</div>
+		<div class="label-y">Y</div>
+			
+
+		<div class="bar">
+			<div class="fill" style="height:75%;">75%</div>
+		</div>
+		<div class="bar">
+			<div class="fill" style="height:25%;">25%</div>
+		</div>
+		<div class="bar">
+			<div class="fill" style="height:50%;">50%</div>
+		</div>
+		<div class="bar">
+			<div class="fill" style="height:100%;">100%</div>
+		</div>
+	</div>
+</body>
+</html>		
