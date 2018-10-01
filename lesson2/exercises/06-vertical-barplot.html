@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Vertical Bar Plot</title>
+   <style type="text/css">
+
+   .plotwrap {
+
+      border-left: solid black 1px;
+      border-bottom: solid black 1px;
+      padding: 1em;
+      height: 250px;
+      display: inline-block;
+      margin-left: 30px;
+      position: relative;
+   }
+
+   .shell {
+
+      border: solid grey 1px;
+      height: 100%;
+      width: 3em;
+      position: relative;
+      display: inline-block;
+      /* display: inline;
+      display: block; */
+      margin: 0 5px;
+      text-align: center;
+   }
+
+   .fill {
+
+      background: lightblue;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+   }
+
+   .x {
+
+      position: absolute;
+      left: -20px;
+      top: 50%;
+   }
+
+   .y {
+
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+   }
+
+   </style>
+</head>
+<body>
+
+   <div class="plotwrap">
+
+      <div class="x">X</div>
+      <div class="y">Y</div>
+
+      <div class="shell">
+         <div class="fill" style="height: 50%">
+            50%
+         </div>
+      </div>
+
+      <div class="shell">
+         <div class="fill" style="height: 75%">
+            75%
+         </div>
+      </div>
+
+      <div class="shell">
+         <div class="fill" style="height: 100%">
+            100%
+         </div>
+      </div>
+
+      <div class="shell">
+         <div class="fill" style="height: 25%">
+            25%
+         </div>
+      </div>
+
+      <div class="shell">
+         <div class="fill" style="height: 25%">
+            25%
+         </div>
+      </div>
+   </div>
+
+</body>
+</html>
