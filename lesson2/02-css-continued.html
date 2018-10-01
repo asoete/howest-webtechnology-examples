@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Recap Lesson 1</title>
+   <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+   <!-- Direct Child Selector -->
+   <style type="text/css">
+   .root div{
+
+      color: green;
+   }
+   .root > div {
+
+      background: yellow;
+      color: red;
+   }
+   </style>
+
+   <div class="root">
+      <div>Direct child</div>
+
+      <div> <!-- direct-child -->
+         Also direct child
+         <div>
+            Grand child
+         </div>
+      </div>
+   </div>
+
+   <!-- Sibling selector -->
+   <style type="text/css">
+
+   .class1 ~ .class2 {
+
+      color: red;
+   }
+   </style>
+
+   <div class="sibling-root">
+      <div class="class1">Child 1</div>
+      <div class="class2">Child 2</div>
+      <div class="class1">Child 3</div>
+      <div class="class-XXX">Child 4</div>
+      <div class="class2">Child 6</div>
+   </div>
+
+
+   <!-- NTH childs -->
+
+   <style type="text/css">
+   .nth-base {
+
+      margin: 20px 0;
+   }
+   .nth-base .class1:first-child {
+
+      background: lightgreen;
+   }
+   .nth-base .class1:last-child {
+
+      background: pink;
+   }
+   .nth-base .class1:nth-child( 2n ) {
+
+      background: yellow;
+   }
+   .nth-base .class1:nth-child( 2n + 1 ) {
+
+      background: pink;
+   }
+   .nth-base .class1:nth-child( odd ) {
+
+      background: pink;
+   }
+   .nth-base .class1:nth-child( even ) {
+
+      background: lightgreen;
+   }
+
+   .nth-base .class1:hover {
+
+      font-weight: bold;
+   }
+   </style>
+
+   <div class="nth-base">
+      <div class="class1">Child 1</div>
+      <div class="class1">Child 2</div>
+      <div class="class1">Child 3</div>
+      <div class="class1">Child 4</div>
+      <div class="class1">Child 5</div>
+      <div class="class1">Child 6</div>
+   </div>
+
+
+
+   <!-- style a table -->
+
+   <style type="text/css">
+      table {
+
+         display: block;
+         visibility: hidden;
+         border-collapse: collapse;
+      }
+      td, th {
+
+         border : solid grey 1px;
+         padding: 15px;
+      }
+   </style>
+
+   <table>
+      <tr>
+         <th>Col 1</th>
+         <th>Col 2</th>
+         <th>Col 3</th>
+      </tr>
+      <tr>
+         <td>data 1</td>
+         <td>data 2</td>
+         <td>data 3</td>
+      </tr>
+   </table>
+
+   <!-- POSTITON and DISPLAY -->
+
+   <style type="text/css">
+      .div1, .div2, .div3 {
+
+         display: inline;
+         display: inline-block;
+         border: solid black 1px;
+         width: 300px;
+      }
+      .div4-parent {
+
+         width: 100%;
+         height: 250px;
+         background: lightyellow;
+         position: relative;
+      }
+      .div4 {
+
+         background: red;
+         color: white;
+         position: absolute;
+         position: fixed;
+         /* top: 50px; */
+         top: 20px;
+         left: 12px;
+         top: 0;
+         left: 0;
+         width: 100%;
+      }
+   </style>
+
+   <div class="div1">Some div with content 1</div>
+   <div class="div2">Some div with content 2</div>
+   <div class="div3">Some div with content 3</div>
+
+   <div class="div4-parent">
+      <div class="div4">Some div with content 3</div>
+   </div>
+
+
+   <!-- float -->
+   <style type="text/css">
+   .float-wrap .float {
+
+      float: left;
+      float: right;
+      background: pink;
+      padding 1em;
+      margin: 1em;
+      width: 150px;
+      height: 150px;
+   }
+   .text-clear {
+
+      clear: both;
+   }
+   </style>
+
+   <div class="float-wrap">
+      <div class="float">
+         Float Me
+      </div>
+      <div class="text">
+         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+         diam nonumy eirmod tempor invidunt ut labore et dolore magna
+         aliquyam erat, sed diam voluptua. At vero eos et accusam et
+      </div>
+      <div class="text-clear">Clear float</div>
+   </div>
+</body>
+</html>
