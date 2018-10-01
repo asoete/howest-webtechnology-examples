@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>My Classmates BIS</title>
+      <style type="text/css">
+
+      table {
+
+         border-collapse: collapse;
+      }
+
+      th, td {
+
+         padding: 0.5em;
+         border-right: solid black 1px;
+      }
+      th:last-child, td:last-child {
+
+         border-right: none;
+      }
+
+      tr:nth-child(even) td {
+
+         background: lightgrey;
+      }
+
+      tr:hover td /* , tr:hover th */ {
+
+         background: lightblue;
+      }
+      </style>
+   </head>
+   <body>
+      <!--
+   Make web page with a table. This table has three columns: first
+   name, last name, age where:
+
+   only the columns have borders (aka. only vertical borders)
+   all even rows have a grey background.  extra: when the mouse
+   pointer passes over a row, t
+   -->
+      <table>
+
+         <caption>Classmates</caption>
+
+         <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>age</th>
+         </tr>
+
+         <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>21</td>
+         </tr>
+         <tr>
+            <td>Jain</td>
+            <td>Doe</td>
+            <td>24</td>
+         </tr>
+         <tr>
+            <td>Jake</td>
+            <td>Doe</td>
+            <td>18</td>
+         </tr>
+         <tr>
+            <td>Lisa</td>
+            <td>Peters</td>
+            <td>20</td>
+         </tr>
+         <tr>
+            <td>Kim</td>
+            <td>Jansens</td>
+            <td>26</td>
+         </tr>
+
+         <tr>
+            <th colspan="2">Total</th>
+            <th>63</th>
+         </tr>
+
+      </table>
+   </body>
+</html>
