@@ -41,7 +41,7 @@ foreach( $seq_arr as $nt ) {
    elseif( $nt == 'G' ) { $comp_arr[] = "C"; }
 }
 
-print_r( $comp_arr );
+// print_r( $comp_arr );
 
 echo "---------------\n";
 echo "orig.: $seq\n";
