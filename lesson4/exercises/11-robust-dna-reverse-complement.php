@@ -20,7 +20,7 @@ foreach( $seq_arr as $nt ) {
    else {
 
       // echo "Invalid NT encountered: $nt\n";
-      # $valid_nt = false;
+      $valid_nt = false;
 
       # print_r( $invalid_nts );
       if( !isset($invalid_nts[$nt]) ) {
