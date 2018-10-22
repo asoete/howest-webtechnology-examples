@@ -74,3 +74,25 @@ foreach( $nt_freq as $nt => $count ) {
    }
    echo "\n";
 }
+
+// Sort
+
+print_r($nt_freq);
+
+# sort( $nt_freq ); // loss of key info
+
+asort( $nt_freq ); // keep key info
+
+print_r($nt_freq);
+
+arsort( $nt_freq ); // sort by value, keep key, reverse
+
+print_r($nt_freq);
+
+ksort( $nt_freq );  // sort by key
+
+print_r($nt_freq);
+
+krsort( $nt_freq );  // sort by key, reverse
+
+print_r($nt_freq);
