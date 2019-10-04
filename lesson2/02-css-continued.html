@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>CSS continued</title>
+</head>
+<body>
+
+   <style type="text/css">
+
+   .content-box {
+
+      background: lightgreen;
+      border: solid green 5px;
+      padding: 22px;
+      width: 250px;
+      height: 250px;
+   }
+
+   .border-box {
+
+      background: lightblue;
+      border: solid blue 5px;
+      padding: 22px;
+      width: 250px;
+      height: 250px;
+      box-sizing: border-box;
+   }
+
+   </style>
+
+
+   <div class="content-box">Div with content box</div>
+
+   <div class="border-box">Div with border-box</div>
+
+
+   <style type="text/css">
+
+      a:hover {
+         color: pink;
+      }
+
+      a:link {
+         color: yellow;
+      }
+
+      a:active {
+         color: red;
+      }
+
+      a:visited {
+
+         color: magenta;
+      }
+
+   </style>
+
+   <div>
+      <a href="https://google.com">Google.com</a>
+   </div>
+   <div>
+      <a href="https://example.com">example.com</a>
+   </div>
+
+   <style type="text/css">
+
+   li {
+
+      list-style-type: square;
+      list-style-position: inside;
+   }
+
+   </style>
+
+   <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+   </ul>
+
+
+   <style type="text/css">
+
+   .d-block, .d-inline, .d-inline-block {
+
+      width: 250px;
+      background: pink;
+      padding: 1em;
+      height: 50px;
+   }
+
+   .d-block {
+
+      display: block;
+   }
+
+   .d-inline {
+
+      display: inline;
+      /*display: none;*/
+      visibility: hidden;
+   }
+
+   .d-inline-block {
+
+      display: inline-block;
+   }
+
+   </style>
+
+
+   One
+   <div class="d-block">Display Block</div>
+   Two
+   <div class="d-inline">Display Inline</div>
+   Three
+   <div class="d-inline-block">Display Inline Block</div>
+   Four
+
+   <br>
+   <br>
+   <br>
+
+   <style type="text/css">
+
+   .p-static {
+
+      position: static;
+      background: lightblue;
+   }
+
+   .p-absolute {
+
+      position: absolute;
+      background: lightblue;
+      top: 5px;
+      right: 5px;
+   }
+
+   .p-relative {
+
+      position: relative;
+      background: yellow;
+      padding: 2em;
+   }
+
+   .p-fixed {
+
+      position: fixed;
+      background: darkred;
+      padding: 1em;
+      color: white;
+      top: 0px;
+      left: 0px;
+      z-index: 999;
+      width: 100%;
+   }
+
+   </style>
+
+   One
+   <div class="p-static">Postion Static</div>
+   Two
+   <div class="p-relative">Postion relative</div>
+   Three
+   <div class="p-fixed">Postion fixed</div>
+   Four
+   <div class="p-absolute">Postion absolute</div>
+   Five
+   <div class="p-relative">
+      This is parent
+      <div class="p-absolute">Postion absolute inside rel</div>
+   </div>
+   Six
+
+
+   <br>
+   <br>
+
+   <style type="text/css">
+
+      .overflow {
+
+         background: pink;
+         width: 250px;
+         height: 100px;
+
+         overflow: auto;
+         overflow-x: scroll;
+      }
+   </style>
+
+   <div class="overflow">
+      columns have borders (aka. only vertical borders)<br>
+      all even rows have a grey background.<br>
+      columns have borders (aka. only vertical borders)<br>
+      columns have borders (aka. only vertical borders)<br>
+      all even rows have a grey background.<br>
+      all even rows have a grey background.<br>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+
+   <style type="text/css">
+      .float-left {
+
+         float: right;
+         background: red;
+         padding: 2em;
+         margin: 1em;
+      }
+
+      .clear {
+
+         clear: both;
+      }
+   </style>
+
+   <div class="">
+      <div class="float-left">float-left</div>
+      columns have borders (aka. only vertical borders)<br>
+      <div class="clear"></div>
+      all even rows have a grey background.<br>
+      columns have borders (aka. only vertical borders)<br>
+      columns have borders (aka. only vertical borders)<br>
+      all even rows have a grey background.<br>
+      all even rows have a grey background.<br>
+   </div>
+
+   <br>
+   <br>
+
+
+   <style type="text/css">
+
+      .align {
+
+         text-align: left;
+         text-align: right;
+         text-align: center;
+         text-align: justify;
+      }
+
+   </style>
+
+   <div class="align">
+      columns have borders (aka. only vertical borders)
+      all even rows have a grey background.
+      columns have borders (aka. only vertical borders)
+      columns have borders (aka. only vertical borders)<br>
+      all even rows have a grey background.<br>
+      all even rows have a grey background.<br>
+   </div>
+   <br>
+   <br>
+   <br>
+
+</body>
+</html>

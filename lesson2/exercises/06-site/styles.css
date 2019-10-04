@@ -1,0 +1,10 @@
+li {
+
+      display: inline-block;
+      padding: 0.5em 2em;
+}
+
+ol {
+
+      border-bottom: solid grey 1px;
+}

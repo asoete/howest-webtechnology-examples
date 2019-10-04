@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Name Page</title>
+   <style type="text/css">
+      div, p {
+
+         background: red;
+      }
+
+      .class-one {
+
+         color: yellow;
+      }
+
+      #my-span, .orange-border {
+
+         border-bottom: solid blue 1px;
+      }
+
+      div div {
+
+         background: blue;
+      }
+
+      div > div {
+
+         background: yellow;
+      }
+   </style>
+</head>
+<body>
+   one
+   <div class="class-one orange-border">block</div>
+   two
+   <span id="my-span" class="class-one">inline</span>
+   three
+   <p class="class-one">Hello World</p>
+
+   <div class="div1">
+      inside level 1
+      <blockquote>
+         <div class="div3">
+            inside level 3
+         </div>
+      </blockquote>
+      <div class="div2">
+         inside level 2
+      </div>
+   </div>
+
+
+   <style type="text/css">
+      .siblings {
+         margin-top: 1em;
+      }
+      .a ~ .b {
+
+         background: lightgreen;
+      }
+
+      .a + .b {
+
+         color: violet;
+      }
+   </style>
+
+   <div class="siblings">
+      <div class="a">one</div>
+      <div class="b">two</div>
+      <div class="c">three</div>
+      <div class="b">four</div>
+   </div>
+
+   <div class="b"> not a sibling</div>
+
+
+   <style type="text/css">
+
+   li {
+
+      font-weight: bold;
+   }
+
+   li:nth-child(1), li:first-child {
+
+      background: yellow;
+   }
+
+   li:nth-child(4), li:last-child {
+
+      background: lightblue;
+   }
+
+   li:nth-child(2n), li:nth-child(even) {
+
+      color:red;
+   }
+   li:nth-child(2n+1), li:nth-child(odd) {
+
+      color:green;
+   }
+   li:hover {
+
+      background: black;
+      color:white;
+   }
+   </style>
+
+
+   <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+      <li>Five</li>
+      <li>Six</li>
+      <li>Seven</li>
+      <li>Eight</li>
+   </ul>
+
+</body>
+</html>
