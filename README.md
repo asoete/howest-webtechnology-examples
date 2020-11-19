@@ -20,3 +20,8 @@ To fetch the latest version of this repository, run:
 cd howest-webtechnology-examples
 git pull origin master
 ```
+
+## Structure
+
+* The `lesson01-12` directories correspond to the daytrack sessions.
+* The `@home-contact-moment-*` directories belong to the @home track contact sessions
