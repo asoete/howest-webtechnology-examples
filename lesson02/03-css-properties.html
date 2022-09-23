@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>CSS properties</title>
+
+	<style type="text/css">
+	/* .... */
+	</style>
+	
+</head>
+<body>
+
+	<style type="text/css">
+		.colors {
+			color: green;
+			color: rgb( 255, 0, 0 );
+			color: rgb( 0, 0, 0 );
+			color: #000000;
+			color: rgb( 0, 255, 0 );
+			color: #00ff00;
+			color: rgb( 0, 0, 255 );
+			color: #0000ff;
+			color: rgb( 34, 185, 204 );
+			color: #22B9CC;
+		}
+	</style>
+	
+	<div class="colors">
+		About colors
+	</div>
+	
+	<style type="text/css">
+		.bg {
+			background: #22B9CC;
+			background: red;
+			background: rgb(0,0,125);
+			background: rgba(0,0,125, 1);
+		}
+	</style>
+	
+	<div class="bg">
+		Background
+	</div>
+	
+
+	<style type="text/css">
+		.border {
+			border: solid red 1px;
+			border: solid red 5px;
+			border: inset grey 5px;
+		}
+	</style>
+
+	<div class="border">
+		Give me a border please
+	</div>
+
+	<style type="text/css">
+		.margin-padding {
+			border: solid grey 1px;
+			margin: 20px;
+			margin-top: 50px;
+			margin-right: 40px;
+			margin-bottom: 30px;
+			margin-left: 20px;
+			margin: 50px 40px 30px 20px;
+			padding: 20px;
+			padding: 50px 40px 30px 20px;
+			padding: 50px 20px;
+			/* padding: 50px 20px 50px 20px; */
+		}
+	</style>
+	
+
+	<div class="margin-padding">
+		This is some content
+	</div>
+	Something below
+	
+	<style type="text/css">
+		.width-height {
+
+			background: pink;
+			height: 125px;
+			width: 125px;
+			/* overflow: scroll; */
+			overflow-x: scroll;
+		}
+	</style>
+	
+
+	<div class="width-height">
+		somecontentsomecontent
+		some content
+		some content
+		some content
+		some content
+		some content
+		some content
+	</div>
+	
+
+	<style type="text/css">
+		.box-model {
+
+			background: lightgreen;
+			margin-top: 100px;
+			width: 150px;
+			height: 75px;
+			border: solid green 5px;
+			padding: 20px;
+			box-sizing: content-box;
+			box-sizing: border-box;
+		}
+	</style>
+	
+	<div class="box-model">
+		inner
+	</div>
+	
+	<style type="text/css">
+		.outline {
+			
+			margin: 20px;
+			border: solid red 5px;
+			outline: solid lightblue 5px;
+
+			background: darkred;
+			padding: 12px;
+			color: white;
+			border: solid white 2px;
+			outline: solid darkred 2px;
+		}
+	</style>
+	
+	<div class="outline">
+		give me an outline please
+	</div>
+	
+	
+	<style type="text/css">
+		.fonts {
+
+			margin: 2em;
+			font-size: 1.2em; /* pt, % */
+			color: steelblue;
+			font-weight: bold;
+			font-style: italic;
+			font-family: sans-serif;
+			/* font-family: monospace; */
+			font-variant: small-caps;
+
+			text-align: left;
+			text-decoration: overline underline;
+			word-spacing: 10px;
+			letter-spacing: 5px;
+		}
+	</style>
+	
+	<div class="fonts">
+		Add soMe font-styles...
+		Add soMe font-styles...
+		Add soMe font-styles...
+		Add soMe font-styles...
+	</div>
+	
+	<style type="text/css">
+		.anchors {
+			margin: 1em;
+		}
+
+		/* a {
+			color: red;
+		}*/
+		.anchors a:link {
+			color: steelblue;
+		}
+		.anchors a:visited {
+			color: grey;
+		}
+		.anchors a:active {
+			color: lime;
+			text-decoration: underline overline;
+		}
+		.anchors a:hover {
+			color: gold;
+			font-weight: bold;
+		}
+
+		/* div:hover {
+			font-size: 0.8em;
+		} */
+	</style>
+	
+
+	<div>
+		<a href="#">Outside of .achors</a>
+	</div>
+
+	
+	<div class="anchors">
+
+		<div>
+			<a href="#not-visited">unvisited</a>
+		</div>
+
+		<a href="#">This is a link</a>
+	</div>
+	
+
+	<style type="text/css">
+
+		ul {
+			list-style-type: none;
+			list-style-type: square;
+		}
+
+		ol {
+			list-style-type: none;
+			list-style-type: upper-roman;
+		}
+
+	</style>
+
+	<ul>
+		<li>List item 1</li>
+		<li>List item 2</li>
+	</ul>
+	
+	<ol>
+		<li>List item 1</li>
+		<li>List item 2</li>
+	</ol>
+	
+
+	<style type="text/css">
+
+		table {
+			/* border: solid black 1px; */
+			border-collapse: collapse;
+		}
+
+		table th, table td {
+
+			border: solid 1px black;
+			padding: 0.5em 1em;
+			background: lightgreen;
+		}
+
+		table td {
+			background: lightblue;
+		}
+
+	</style>
+	
+	<table>
+		<tr>
+			<th>Col1</th>
+			<th>Col2</th>
+			<th>Col3</th>
+		</tr>
+		
+		<tr>
+			<td>Data a</td>
+			<td>Data b</td>
+			<td>Data c</td>
+		</tr>
+		
+		<tr>
+			<td>Data x</td>
+			<td>Data y</td>
+			<td>Data z</td>
+		</tr>
+	</table>
+	
+
+	<style type="text/css">
+
+	.position {
+		margin: 3em 0;
+		position: relative;
+	}
+
+	.display {
+		color: blue;
+		background: yellow;
+		height: 4em;
+		width: 100px;
+		/* padding: 1em; */
+		display: block;
+		display: inline;
+		display: inline-block;
+		/* display: none; */
+		visibility: hidden;
+	}
+
+	.abs {
+
+		color: red;
+		position: static;
+		position: absolute;
+		position: fixed;
+		left: 0;
+		top: 0px;
+	}
+
+	</style>
+	
+	<div class="position">
+		before
+		<div class="display">
+			Can you see me?
+		</div>
+		after
+
+		<div class="abs">
+			Abs inside position
+		</div>
+	</div>
+	
+	<div class="abs">
+		Abs outside position
+	</div>
+		
+
+	
+</body>
+</html>

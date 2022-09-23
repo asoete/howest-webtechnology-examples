@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Fasta Wiki</title>
+</head>
+<body>
+
+	<h1>FASTA format</h1>
+	
+	<p>
+		In <a
+			href="https://en.wikipedia.org/wiki/Bioinformatics">bioinformatics</a>,
+		FASTA <a href="https://en.wikipedia.org/wiki/File_format">format</a> is a
+		text-based format for representing either nucleotide sequences or peptide
+		sequences, in which nucleotides or amino acids are represented using
+		single-letter codes. The format also allows for sequence names and
+		comments to precede the sequences. The format originates from the FASTA
+		software package, but has now become a standard in the field of
+		bioinformatics.
+	</p>
+	
+	<ol>
+		<li>
+			<a href="#">History</a>
+		</li>
+		<li>
+			<a href="#">Description Line</a>
+			<ol>
+				<li>
+					<a href="#">Sequence Representation</a>
+				</li>
+			</ol>
+			
+		</li>
+		<li>
+			<a href="#">Sequence ID</a>
+			<ol>
+				<li>
+					<a href="#">Compression</a>
+				</li>
+				<li>
+					<a href="#">File Extension</a>
+				</li>
+			</ol>
+			
+		</li>
+		<li>
+			<a href="#">See Also</a>
+		</li>
+		<li>
+			<a href="#">References</a>
+		</li>
+	</ol>
+	
+	<!-- <h2>History <small>[<a href="#">edit</a>]</small></h2> -->
+	
+	<!-- Start section 2 -->
+	<h2>
+		History
+		<small>
+			[<a href="#">edit</a>]
+		</small>
+	</h2>
+
+	<p>
+	The original FASTA/Pearson format is described in the documentation for the FASTA suite of programs. It can be downloaded with any free distribution of FASTA (see fasta20.doc, fastaVN.doc or fastaVN.me—where VN is the Version Number).
+	</p>
+
+	<p>
+	A sequence in FASTA format is represented as a series of lines, each of which should be no longer than 120 characters and usually do not exceed 80 characters. This probably was to allow for preallocation of fixed line sizes in software: at the time most users relied on DEC VT (or compatible) terminals which could display 80 or 132 characters per line. Most people preferred the bigger font in 80-character modes and so it became the recommended fashion to use 80 characters or less (often 70) in FASTA lines. Also, the width of a standard printed page is 70 to 80 characters (depending on the font).
+	</p>
+
+	<p>
+	The first line in a FASTA file starts either with a ">" (greater-than) symbol or, less frequently, a ";" (semicolon) and was taken as a comment. Subsequent lines starting with a semicolon would be ignored by software. Since the only comment used was the first, it quickly became used to hold a summary description of the sequence, often starting with a unique library accession number, and with time it has become commonplace use to always use ">" for the first line and to not use ";" comments (which would otherwise be ignored).
+	</p>
+
+	<p>
+	Following the initial line (used for a unique description of the sequence) is the actual sequence itself in standard one-letter code. Anything other than a valid code would be ignored (including spaces, tabulators, asterisks, etc...). Originally it was also common to end the sequence with an "*" (asterisk) character (in analogy with use in PIR formatted sequences) and, for the same reason, to leave a blank line between the description and the sequence.
+	</p>
+
+	<p>
+	A few sample sequences:
+	</p>
+	
+	<pre>
+;LCBO - Prolactin precursor - Bovine
+; a sample sequence in FASTA format
+MDSKGSSQKGSRLLLLLVVSNLLLCQGVVSTPVCPNGPGNCQVSLRDLFDRAVMVSHYIHDLSS
+EMFNEFDKRYAQGKGFITMALNSCHTSSLPTPEDKEQAQQTHHEVLMSLILGLLRSWNDPLYHL
+VTEVRGMKGAPDAILSRAIEIEEENKRLLEGMEMIFGQVIPGAKETEPYPVWSGLPSLQTKDED
+ARYSAFYNLLHCLRRDSSKIDTYLKLLNCRIIYNNNC*
+
+
+>MCHU - Calmodulin - Human, rabbit, bovine, rat, and chicken
+ADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTID
+FPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREA
+DIDGDGQVNYEEFVQMMTAK*
+
+
+>gi|5524211|gb|AAD44166.1| cytochrome b [Elephas maximus maximus]
+LCLYTHIGRNIYYGSYLYSETWNTGIMLLLITMATAFMGYVLPWGQMSFWGATVITNLFSAIPYIGTNLVEWIWGGFSVDKATLNRFFAFHFILPFTMVALAGVHLTFLHETGSNNPLGLTSDSDKIPFHPYYTIKDFLG
+LLILILLLLLLALLSPDMLGDPDNHMPADPLNTPLHIKPEWYFLFAYAILRSVPNKLGGVLALFLSIVIL
+GLMPFLHTSKHRSMMLRPLSQALFWTLTMDLLTLTWIGSQPVEYPYTIIGQMASILYFSIILAFLPIAGX
+IENY
+	</pre>
+	
+	<h3>
+		Sequence representation
+	</h3>
+
+	<table>
+		<tr>
+			<th>
+				Nucleic Acid Code
+			</th>
+			<th>
+				Meaning
+			</th>
+			<th>
+				Mnemonic
+			</th>
+		</tr>
+		
+		<tr>
+			<td>A</td>
+			<td>A</td>
+			<td>
+				<a href="https://en.wikipedia.org/wiki/Adenine">Adenine</a>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>C</td>
+			<td>C</td>
+			<td>
+				<a href="https://en.wikipedia.org/wiki/Cytosine">Cytosine</a>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>V</td>
+			<td>neither T nor U (i.e. A, C or G)</td>
+			<td>
+				V comes after U
+			</td>
+		</tr>
+		
+	</table>
+	
+</body>
+</html>
