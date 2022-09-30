@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Horizontal Barplot</title>
+	<style type="text/css">
+		.graph {
+			border-left: solid black 1px;
+			border-bottom: solid black 1px;
+			padding: 0.5em;
+			margin-left: 2em;
+			position: relative;
+		}
+
+		.bar {
+			border: solid lightgrey 1px;
+			width: 250px;
+			margin: 0.5em 0;
+		}
+
+		.fill {
+			background: lightblue;
+			text-align: right;
+			border: solid grey 1px;
+			box-sizing: border-box;
+		}
+
+		.x {
+			position: absolute;
+			bottom: -1.5em;
+			left: 50%;
+		}
+
+		.y {
+			position: absolute;
+			left: -1.5em;
+			top: 50%;
+		}
+	</style>
+	
+</head>
+<body>
+
+	<div class="graph">
+
+		<div class="x">X</div>
+		<div class="y">Y</div>
+		
+
+		<div class="bar">
+			<div class="fill" style="width: 75%">
+				75%
+			</div>
+		</div>
+
+		<div class="bar">
+			<div class="fill" style="width: 25%">
+				25%
+			</div>
+		</div>
+
+		<div class="bar">
+			<div class="fill" style="width: 50%">
+				50%
+			</div>
+		</div>
+
+		<div class="bar">
+			<div class="fill" style="width: 100%">
+				100%
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
