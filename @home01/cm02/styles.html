@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Styles CSS</title>
+</head>
+<body>
+
+	<style type="text/css">
+		.outline{
+			border:solid red 5px;
+			outline: solid green 5px;
+		}
+	</style>
+	
+	<div class="outline">Hello World</div>
+	
+	
+	<style type="text/css">
+		.font{
+			margin-top: 25px;
+			border:solid black 1px;
+			color: deeppink;
+			font-size: 1.2em;
+			font-weight: bold;
+			font-style: italic;
+			font-family: sans-serif;
+			font-variant: small-caps;
+
+			text-align: left;
+			text-align: justify;
+			text-decoration: underline overline;
+
+			text-align: left;
+			word-spacing: 20px;
+			letter-spacing: 5px;
+
+		}
+	</style>
+	
+	<div class="font">
+		Hello World
+		Hello World
+		Hello World
+		Hello World
+		Hello World
+	</div>
+
+	<style type="text/css">
+		/* a {
+			color: red;
+		}*/
+		.anchors a:link {
+			color: green;
+		}
+		.anchors a:visited {
+			color: red;
+		}
+		.anchors a:hover {
+			color: gold;
+		}
+		.anchors a:active {
+			color: deeppink;
+		}
+	</style>
+
+	<a href="https://google.com">Google</a>
+	<div class="anchors">
+		<a href="https://google.com">Google</a>
+	</div>
+	
+
+	<style type="text/css">
+
+		.lists li {
+			list-style-type: square;
+		}
+
+	</style>
+
+	<div class="lists">
+		<ul>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+		</ul>
+		
+	</div>
+	
+
+	<style type="text/css">
+		table {
+			border-collapse: collapse;
+		}
+		td, th {
+			border-left: solid black 1px;
+			padding: 0.5em 1em;
+		}
+		th:first-child ,
+		td:first-child {
+			border: none;
+		}
+	</style>
+	
+
+	<table>
+		<tr>
+			<th>A</th>
+			<th>B</th>
+			<th>C</th>
+		</tr>
+		<tr>
+			<td>A</td>
+			<td>B</td>
+			<td>C</td>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>2</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>X</td>
+			<td>Y</td>
+			<td>Z</td>
+		</tr>
+	</table>
+	
+
+	<style type="text/css">
+
+		.float .floatme {
+
+			width: 5em;
+			height: 5em;
+			background: red;
+			float: left;
+			margin-right: 0.25em;
+		}
+
+		.stop-float {
+
+			clear: both;
+		}
+
+	</style>
+
+	<div class="float">
+		<div class="floatme"></div>
+		<p>
+			Hello world and more
+			Hello world and more
+		</p>
+		<p class="stop-float">
+			Hello world and more
+			Hello world and more
+			Hello world and more
+		</p>
+		
+		
+	</div>
+	
+	
+	
+	
+</body>
+</html>
